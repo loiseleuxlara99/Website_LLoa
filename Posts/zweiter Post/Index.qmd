@@ -1,0 +1,11 @@
+---
+title: "Mein erster Blogpost"
+description: "Ich teste meinen ersten Blogpost mit Quarto."
+author: "Lara Loiseleux"
+date: 2026-02-10
+categories: [Quarto, Studium]
+---
+
+## Einleitung
+
+Das ist mein **erster** Blogpost. 

@@ -14,32 +14,25 @@
     "text": "Master’s Thesis (ongoing) — Conceptual & Psychometric Foundations of Socio-Emotional Skills (BESSI)\n\n\nTopic: Psychometric validation of a short-form instrument to assess socio-emotional skills in adolescents.\n\n\nContent: In my master’s thesis, I investigate the conceptual and psychometric foundations of socio-emotional skills measurement, focusing on the distinction between skills (“I can”) and personality traits (“I am”). The project examines whether high correlations reflect substantive overlap or near-synonymous item wording.\n\n\nMethods:\n\n\n\nLarge longitudinal sample of upper secondary students\n\n\nExploratory Structural Equation Modeling (ESEM)\n\n\nLongitudinal measurement invariance testing\n\n\nLatent stability models\n\n\nR (lavaan), FIML for missing data\n\n\n\n\n\nSecondary Analysis — ITT & CACE effects in a digital socio-emotional intervention\n\n\nTopic: Compliance-sensitive causal effects in a digital socio-emotional intervention for preschool children.\n\n\nContent: Secondary analysis of a randomized controlled trial. Beyond intention-to-treat (ITT), I applied Complier Average Causal Effect (CACE) models to examine how intervention effects depend on actual usage (compliance).\n\n\nMethods:\n\n\n\nSecondary analysis of an RCT\n\n\nITT vs. CACE comparison\n\n\nFIML for missing data\n\n\nSensitivity and tipping-point analyses\n\n\n\nKey contribution: ITT effects were small/absent, while CACE estimates suggested stronger effects among high-compliance participants and highlighted threats to causal interpretation when design assumptions are weak.\n\n\n\n\nExperimental Study — Epistemic emotions and information-seeking\n\n\nTopic: Epistemic emotions, misinformation, and exploratory information-seeking.\n\n\nContent: In an online experiment, we tested whether stylistic framings of refutation texts induce epistemic emotions (confusion vs. situational interest) and influence exploratory information-seeking behaviour and comprehension.\n\n\nMethods:\n\n\n\nOnline experiment (between-subjects)\n\n\nManipulation via text design\n\n\nBehavioural measure (click behaviour)\n\n\nRegression models, ANOVA, robustness checks\n\n\n\nKey contribution: No clear condition differences, but the study provides a methodological analysis of limits in emotion induction and click-based proxies.\n\n\n\n\nBachelor’s Thesis — Mediation model of mindfulness, decentering, and emotional competence\n\n\nTopic: Do decentering and emotional competence mediate the relationship between mindfulness and well-being?\n\n\nContent: In my bachelor’s thesis, I examined whether the relationship between mindfulness and well-being can be explained by underlying mechanisms, specifically decentering and emotional competence. Using cross-sectional survey data, I tested a mediation model to explore potential indirect pathways.\n\n\nMethods:\n\n\n\nOnline survey study (N = 190)\n\n\nMediation analysis using PROCESS (Hayes)\n\n\nBootstrapping (5,000 iterations)\n\n\nPath analysis (SPSS AMOS)\n\n\nA priori power analysis\n\n\n\nKey contribution: While causal interpretation was limited due to the correlational design, the project introduced a mechanistic perspective on socio-emotional competencies and highlighted the need for experimental and compliance-sensitive approaches in subsequent work."
   },
   {
-    "objectID": "About_me.html",
-    "href": "About_me.html",
-    "title": "About",
+    "objectID": "Posts/Erster Post/Index.html",
+    "href": "Posts/Erster Post/Index.html",
+    "title": "Likertitems als metrisch oder ordinalskaliert betrachten?",
     "section": "",
-    "text": "Master’s Student | Empirical Educational Research & Educational Psychology\nUniversity of Tübingen (Expected graduation: October 2026)\nI study how socio-emotional and self-regulatory competencies can be defined, measured, and causally interpreted in educational contexts—especially when real-world research designs limit what conclusions are justified.\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nQuick facts\n- M.Sc. Empirical Educational Research (Tübingen)\n- Focus: assessment & evaluation of socio-emotional competencies\n- Tools: R · Quarto · SPSS · MAXQDA · JATOS\n\n\n\n\n\nI am interested in how socio-emotional and self-regulatory competencies can be conceptually defined, validly measured, and causally interpreted in educational contexts.\nThese competencies are widely considered important for educational success and democratic participation, yet their measurement and evaluation pose substantial methodological challenges.\n\n\n\n\n\nMy methodological focus lies in quantitative research designs and psychometric approaches, including the evaluation of measurement models, longitudinal analyses, and experimental interventions.\nI work primarily with reproducible workflows in R and Quarto.\n\nQuantitative methodsQualitative methodsResearch practiceScientific communication\n\n\n\nQuantitative data analysis in R\nMeasurement models & psychometrics (e.g., factor models; measurement invariance)\nExperimental and quasi-experimental evaluation (e.g., ITT / CACE in secondary analyses)\nLongitudinal data analysis and missing data handling (e.g., FIML)\n\n\n\n\nQualitative content analysis following Mayring\nCategory development based on interview material (East/West Germany)\nCoding and analysis using MAXQDA\nIdentification and structuring of stereotype-related narratives\n\n\n\n\nReproducible reporting with Quarto\nStructured project coordination and independent workflow management\nTeaching assistance in statistics (Master-level tutorial support)\nPreparation of empirical materials, reports, and presentations\n\n\n\n\nAudience-oriented explanation of methodological concepts\nClear and structured presentation of empirical findings\nDevelopment of teaching and presentation materials with focus on clarity\n\n\n\n\n\n\n\nI intend to pursue a PhD focusing on the measurement and evaluation of socio-emotional competencies and the development of empirically grounded assessment tools."
+    "text": "Problem:\nSchätzung mit Weighted Least Squares Mean and Variance adjustedund in Sewell et al. (2024) |\nVergleich mit Maximum Likelihood (ML) Schätzung, wenn die Faktorladungen relativ gleichbleiben/ Standardfehler nicht zu sehr voneinander abweichen –&gt; weiterrechnen mit ML für weitere Analysen."
   },
   {
-    "objectID": "About_me.html#research-interest",
-    "href": "About_me.html#research-interest",
-    "title": "About",
+    "objectID": "Posts/Erster Post/Index.html#replikation-bessi-g-45-items-sewell-et-al.-2024",
+    "href": "Posts/Erster Post/Index.html#replikation-bessi-g-45-items-sewell-et-al.-2024",
+    "title": "Likertitems als metrisch oder ordinalskaliert betrachten?",
     "section": "",
-    "text": "I am interested in how socio-emotional and self-regulatory competencies can be conceptually defined, validly measured, and causally interpreted in educational contexts.\nThese competencies are widely considered important for educational success and democratic participation, yet their measurement and evaluation pose substantial methodological challenges."
+    "text": "Problem:\nSchätzung mit Weighted Least Squares Mean and Variance adjustedund in Sewell et al. (2024) |\nVergleich mit Maximum Likelihood (ML) Schätzung, wenn die Faktorladungen relativ gleichbleiben/ Standardfehler nicht zu sehr voneinander abweichen –&gt; weiterrechnen mit ML für weitere Analysen."
   },
   {
-    "objectID": "About_me.html#methods-research-practice",
-    "href": "About_me.html#methods-research-practice",
-    "title": "About",
-    "section": "",
-    "text": "My methodological focus lies in quantitative research designs and psychometric approaches, including the evaluation of measurement models, longitudinal analyses, and experimental interventions.\nI work primarily with reproducible workflows in R and Quarto.\n\nQuantitative methodsQualitative methodsResearch practiceScientific communication\n\n\n\nQuantitative data analysis in R\nMeasurement models & psychometrics (e.g., factor models; measurement invariance)\nExperimental and quasi-experimental evaluation (e.g., ITT / CACE in secondary analyses)\nLongitudinal data analysis and missing data handling (e.g., FIML)\n\n\n\n\nQualitative content analysis following Mayring\nCategory development based on interview material (East/West Germany)\nCoding and analysis using MAXQDA\nIdentification and structuring of stereotype-related narratives\n\n\n\n\nReproducible reporting with Quarto\nStructured project coordination and independent workflow management\nTeaching assistance in statistics (Master-level tutorial support)\nPreparation of empirical materials, reports, and presentations\n\n\n\n\nAudience-oriented explanation of methodological concepts\nClear and structured presentation of empirical findings\nDevelopment of teaching and presentation materials with focus on clarity"
-  },
-  {
-    "objectID": "About_me.html#academic-direction",
-    "href": "About_me.html#academic-direction",
-    "title": "About",
-    "section": "",
-    "text": "I intend to pursue a PhD focusing on the measurement and evaluation of socio-emotional competencies and the development of empirically grounded assessment tools."
+    "objectID": "Posts/Erster Post/Index.html#wie-groß-wird-wohl-die-differenz-zwischen-den-standardfehlern-der-unterschiedlich-geschätzten-modelle-wsmlv-vs.-ml",
+    "href": "Posts/Erster Post/Index.html#wie-groß-wird-wohl-die-differenz-zwischen-den-standardfehlern-der-unterschiedlich-geschätzten-modelle-wsmlv-vs.-ml",
+    "title": "Likertitems als metrisch oder ordinalskaliert betrachten?",
+    "section": "Wie groß wird wohl die differenz zwischen den Standardfehlern der unterschiedlich geschätzten Modelle (WSMLV vs. ML)",
+    "text": "Wie groß wird wohl die differenz zwischen den Standardfehlern der unterschiedlich geschätzten Modelle (WSMLV vs. ML)"
   },
   {
     "objectID": "CV.html",
@@ -61,5 +54,68 @@
     "title": "CV & Contact",
     "section": "Contact",
     "text": "Contact\n LinkedIn Profile \n\n Download CV (PDF)"
+  },
+  {
+    "objectID": "About_me.html",
+    "href": "About_me.html",
+    "title": "About",
+    "section": "",
+    "text": "Master’s Student | Empirical Educational Research & Educational Psychology\nUniversity of Tübingen (Expected graduation: October 2026)\nMy focus is on the conceptualization, measurement, and causal interpretation of non-cognitive competencies in educational contexts, with a particular emphasis on socio-emotional and self-regulatory skills. I have worked with quantitative and qualitative approaches, including longitudinal measurement models, secondary analyses of randomized interventions.\nMy methodological focus lies in quantitative research designs and psychometric approaches.\n\n\n\n\n\n\n\n\n\nNote\n\n\n\n\nPage in Progress\n\n\n\n\n\n\nEducational research increasingly emphasizes the role of non-cognitive competencies—such as socio-emotional and self-regulatory skills—for learning and social participation. If schools are expected to support the development of such competencies, however, this raises important questions regarding how they can be meaningfully adressed, assessed and evaluated.\n\n\n\nAcross projects, I am interested in aligning substantive research questions with appropriate measurement strategies and analytic approaches, and in reflecting on the assumptions underlying causal interpretation in applied educational research.\n\n\n\nFuture work will focus on the development from Interventions and evaluation of alternative assessment formats for non-cognitive competencies, including interactive or simulation-based approaches that may complement traditional self-report instruments."
+  },
+  {
+    "objectID": "About_me.html#research-interest",
+    "href": "About_me.html#research-interest",
+    "title": "About",
+    "section": "",
+    "text": "Educational research increasingly emphasizes the role of non-cognitive competencies—such as socio-emotional and self-regulatory skills—for learning and social participation. If schools are expected to support the development of such competencies, however, this raises important questions regarding how they can be meaningfully adressed, assessed and evaluated."
+  },
+  {
+    "objectID": "About_me.html#methodological-orientation",
+    "href": "About_me.html#methodological-orientation",
+    "title": "About",
+    "section": "",
+    "text": "Across projects, I am interested in aligning substantive research questions with appropriate measurement strategies and analytic approaches, and in reflecting on the assumptions underlying causal interpretation in applied educational research."
+  },
+  {
+    "objectID": "About_me.html#academic-direction",
+    "href": "About_me.html#academic-direction",
+    "title": "About",
+    "section": "",
+    "text": "Future work will focus on the development from Interventions and evaluation of alternative assessment formats for non-cognitive competencies, including interactive or simulation-based approaches that may complement traditional self-report instruments."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Willkommen in meinem Blog! Hier findest du alle meine Beiträge.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLikertitems als metrisch oder ordinalskaliert betrachten?\n\n\n\nMasterarbeit\n\nPsychometrie\n\n\n\n\n\n\n\n\n\nFeb 15, 2026\n\n\nLara Loiseleux\n\n\n\n\n\n\n\n\n\n\n\n\nMein erster Blogpost\n\n\n\nQuarto\n\nStudium\n\n\n\nIch teste meinen ersten Blogpost mit Quarto.\n\n\n\n\n\nFeb 10, 2026\n\n\nLara Loiseleux\n\n\n\n\n\n\n\n\n\n\n\n\nzweiter Post\n\n\n\nQuarto\n\nStudium\n\n\n\nTest\n\n\n\n\n\nJan 10, 2026\n\n\nLara Loiseleux\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "Posts/dritten Post/Index.html",
+    "href": "Posts/dritten Post/Index.html",
+    "title": "zweiter Post",
+    "section": "",
+    "text": "set.seed(1) x &lt;- rnorm(100) mean(x)"
+  },
+  {
+    "objectID": "Posts/dritten Post/Index.html#r-code",
+    "href": "Posts/dritten Post/Index.html#r-code",
+    "title": "zweiter Post",
+    "section": "",
+    "text": "set.seed(1) x &lt;- rnorm(100) mean(x)"
+  },
+  {
+    "objectID": "Posts/zweiter Post/Index.html",
+    "href": "Posts/zweiter Post/Index.html",
+    "title": "Mein erster Blogpost",
+    "section": "",
+    "text": "Das ist mein erster Blogpost."
+  },
+  {
+    "objectID": "Posts/zweiter Post/Index.html#einleitung",
+    "href": "Posts/zweiter Post/Index.html#einleitung",
+    "title": "Mein erster Blogpost",
+    "section": "",
+    "text": "Das ist mein erster Blogpost."
   }
 ]

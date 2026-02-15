@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Projects – Lara-Marie Loiseleux</title>
+<title>Blog – Lara-Marie Loiseleux</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -67,12 +69,70 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -94,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./Projects.html" aria-current="page"> 
+    <a class="nav-link" href="./Projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
@@ -102,7 +162,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">CV &amp; Contact</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link active" href="./blog.html" aria-current="page"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -116,13 +176,14 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="TWFzdGVyYXJiZWl0">Masterarbeit <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHN5Y2hvbWV0cmll">Psychometrie <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UXVhcnRv">Quarto <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U3R1ZGl1bQ==">Studium <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projects</h1>
+<h1 class="title">Blog</h1>
 </div>
 
 
@@ -139,140 +200,112 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="research-projects" class="level2">
-<h2 class="anchored" data-anchor-id="research-projects">Research Projects</h2>
-<details>
-<summary>
-<strong>Master’s Thesis (ongoing) — Conceptual &amp; Psychometric Foundations of Socio-Emotional Skills (BESSI)</strong>
-</summary>
-<p>
-<strong>Topic:</strong> Psychometric validation of a short-form instrument to assess socio-emotional skills in adolescents.
-</p>
-<p>
-<strong>Content:</strong> In my master’s thesis, I investigate the conceptual and psychometric foundations of socio-emotional skills measurement, focusing on the distinction between skills (“I can”) and personality traits (“I am”). The project examines whether high correlations reflect substantive overlap or near-synonymous item wording.
-</p>
-<p>
-<strong>Methods:</strong>
-</p>
-<ul>
-<li>
-Large longitudinal sample of upper secondary students
-</li>
-<li>
-Exploratory Structural Equation Modeling (ESEM)
-</li>
-<li>
-Longitudinal measurement invariance testing
-</li>
-<li>
-Latent stability models
-</li>
-<li>
-R (lavaan), FIML for missing data
-</li>
-</ul>
-</details>
-<details>
-<summary>
-<strong>Secondary Analysis — ITT &amp; CACE effects in a digital socio-emotional intervention</strong>
-</summary>
-<p>
-<strong>Topic:</strong> Compliance-sensitive causal effects in a digital socio-emotional intervention for preschool children.
-</p>
-<p>
-<strong>Content:</strong> Secondary analysis of a randomized controlled trial. Beyond intention-to-treat (ITT), I applied Complier Average Causal Effect (CACE) models to examine how intervention effects depend on actual usage (compliance).
-</p>
-<p>
-<strong>Methods:</strong>
-</p>
-<ul>
-<li>
-Secondary analysis of an RCT
-</li>
-<li>
-ITT vs.&nbsp;CACE comparison
-</li>
-<li>
-FIML for missing data
-</li>
-<li>
-Sensitivity and tipping-point analyses
-</li>
-</ul>
-<p>
-<strong>Key contribution:</strong> ITT effects were small/absent, while CACE estimates suggested stronger effects among high-compliance participants and highlighted threats to causal interpretation when design assumptions are weak.
-</p>
-</details>
-<details>
-<summary>
-<strong>Experimental Study — Epistemic emotions and information-seeking</strong>
-</summary>
-<p>
-<strong>Topic:</strong> Epistemic emotions, misinformation, and exploratory information-seeking.
-</p>
-<p>
-<strong>Content:</strong> In an online experiment, we tested whether stylistic framings of refutation texts induce epistemic emotions (confusion vs.&nbsp;situational interest) and influence exploratory information-seeking behaviour and comprehension.
-</p>
-<p>
-<strong>Methods:</strong>
-</p>
-<ul>
-<li>
-Online experiment (between-subjects)
-</li>
-<li>
-Manipulation via text design
-</li>
-<li>
-Behavioural measure (click behaviour)
-</li>
-<li>
-Regression models, ANOVA, robustness checks
-</li>
-</ul>
-<p>
-<strong>Key contribution:</strong> No clear condition differences, but the study provides a methodological analysis of limits in emotion induction and click-based proxies.
-</p>
-</details>
-<details>
-<summary>
-<strong>Bachelor’s Thesis — Mediation model of mindfulness, decentering, and emotional competence</strong>
-</summary>
-<p>
-<strong>Topic:</strong> Do decentering and emotional competence mediate the relationship between mindfulness and well-being?
-</p>
-<p>
-<strong>Content:</strong> In my bachelor’s thesis, I examined whether the relationship between mindfulness and well-being can be explained by underlying mechanisms, specifically decentering and emotional competence. Using cross-sectional survey data, I tested a mediation model to explore potential indirect pathways.
-</p>
-<p>
-<strong>Methods:</strong>
-</p>
-<ul>
-<li>
-Online survey study (N = 190)
-</li>
-<li>
-Mediation analysis using PROCESS (Hayes)
-</li>
-<li>
-Bootstrapping (5,000 iterations)
-</li>
-<li>
-Path analysis (SPSS AMOS)
-</li>
-<li>
-A priori power analysis
-</li>
-</ul>
-<p>
-<strong>Key contribution:</strong> While causal interpretation was limited due to the correlational design, the project introduced a mechanistic perspective on socio-emotional competencies and highlighted the need for experimental and compliance-sensitive approaches in subsequent work.
-</p>
-</details>
+<p>Willkommen in meinem Blog! Hier findest du alle meine Beiträge.</p>
 
 
-</section>
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="TWFzdGVyYXJiZWl0JTJDUHN5Y2hvbWV0cmll" data-listing-date-sort="1771110000000" data-listing-file-modified-sort="1771178091128" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="57">
+<div class="thumbnail"><a href="./Posts/Erster Post/Index.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./Posts/Erster Post/Index.html" class="no-external">Likertitems als metrisch oder ordinalskaliert betrachten?</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWFzdGVyYXJiZWl0'); return false;">Masterarbeit</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHN5Y2hvbWV0cmll'); return false;">Psychometrie</div>
+
+</div>
+<div class="delink listing-description"><a href="./Posts/Erster Post/Index.html" class="no-external">
+Problem:
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Posts/Erster Post/Index.html" class="no-external">
+<div class="listing-date">
+Feb 15, 2026
+</div>
+<div class="listing-author">
+Lara Loiseleux
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="UXVhcnRvJTJDU3R1ZGl1bQ==" data-listing-date-sort="1770678000000" data-listing-file-modified-sort="1771178094092" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./Posts/zweiter Post/Index.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./Posts/zweiter Post/Index.html" class="no-external">Mein erster Blogpost</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UXVhcnRv'); return false;">Quarto</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3R1ZGl1bQ=='); return false;">Studium</div>
+
+</div>
+<div class="delink listing-description"><a href="./Posts/zweiter Post/Index.html" class="no-external">
+<p>Ich teste meinen ersten Blogpost mit Quarto.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Posts/zweiter Post/Index.html" class="no-external">
+<div class="listing-date">
+Feb 10, 2026
+</div>
+<div class="listing-author">
+Lara Loiseleux
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="UXVhcnRvJTJDU3R1ZGl1bQ==" data-listing-date-sort="1767999600000" data-listing-file-modified-sort="1771176909699" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
+<div class="thumbnail"><a href="./Posts/dritten Post/Index.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./Posts/dritten Post/Index.html" class="no-external">zweiter Post</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UXVhcnRv'); return false;">Quarto</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3R1ZGl1bQ=='); return false;">Studium</div>
+
+</div>
+<div class="delink listing-description"><a href="./Posts/dritten Post/Index.html" class="no-external">
+<p>Test</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Posts/dritten Post/Index.html" class="no-external">
+<div class="listing-date">
+Jan 10, 2026
+</div>
+<div class="listing-author">
+Lara Loiseleux
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

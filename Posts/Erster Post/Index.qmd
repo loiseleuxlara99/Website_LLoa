@@ -1,0 +1,17 @@
+---
+title: "Likertitems als metrisch oder ordinalskaliert betrachten?"
+author: "Lara Loiseleux"
+date: 2026-02-15
+categories: [Masterarbeit, Psychometrie]
+---
+
+## Replikation BESSi-G (45 Items) (Sewell et al., 2024) 
+
+Problem: 
+
+Schätzung mit Weighted Least Squares Mean and Variance adjustedund in Sewell et al. (2024) | 
+
+Vergleich mit Maximum Likelihood (ML) Schätzung, wenn die Faktorladungen relativ gleichbleiben/ Standardfehler nicht zu sehr voneinander abweichen --> weiterrechnen mit ML für weitere Analysen. 
+
+
+## Wie groß wird wohl die differenz zwischen den Standardfehlern der unterschiedlich geschätzten Modelle (WSMLV vs. ML)
